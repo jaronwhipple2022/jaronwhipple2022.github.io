@@ -1,0 +1,18 @@
+header {
+    background-color: blue;
+}
+.motto {
+    font-size: large;
+}
+.logo-grid {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    align-items: center;
+    list-style: none;
+  }

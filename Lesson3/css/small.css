@@ -1,0 +1,63 @@
+body {
+    background-color: darkgrey;
+}
+img {
+    width: 15em;
+    height: 15em;
+}
+main img {
+    width: 20em;
+    height: auto;
+}
+
+.domain {
+    font-size: 30px;
+    color: black;
+}
+.logo-grid {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center;
+}
+nav {
+    padding: .5em;
+    text-align: center;
+    background-color: #BDD4E7;
+    border-bottom: 0px;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+  }
+
+  nav a:hover {
+    background-color: #4E4B5C;
+    color: black;
+}
+
+main {
+    background-color:#4A6D7C;
+    font-size: 2em;
+    color:black;
+    padding: .5em;
+}
+
+.purpose {
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.audience {
+    text-align: center;
+}
+.audience-grid {
+    display: grid;
+    grid-template-columns: auto auto; 
+    align-items: center;
+    padding: 15px;
+}

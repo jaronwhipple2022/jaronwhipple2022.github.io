@@ -1,8 +1,15 @@
 @media only screen and (min-width: 32.5rem) {
 
-    nav ul {
-        display: flex;
+    nav {
         display: grid;
+    }
+    nav ul {
         grid-template-columns: auto auto auto auto;
+        padding: .5em;
+        text-align: center;
+        border-bottom: 0px;
+    }
+    main {
+        font-size: 2em;
     }
 }

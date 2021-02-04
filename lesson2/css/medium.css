@@ -1,7 +1,16 @@
-@media only screen and (min-width: 32.5rem) {
+@media only screen and (min-width:32.5rem){
 
-    header{
-        background-color: black;
-
+    main {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto; 
+    
+        grid-column: 1 / 2;
+        grid-row: 1;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        grid-column: 1 / 2;
+        grid-row: 2;
     }
+    
 }

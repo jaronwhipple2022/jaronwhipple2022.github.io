@@ -1,0 +1,88 @@
+.banner {
+    display: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #cfd11a;
+    padding: 1em;
+    font-size: 1em;
+}
+header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+    background-color: #ad2e24;
+    color: #cfd11a;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.motto {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navigation {
+    list-style: none;
+    display: block;
+    text-align: center;
+    background-color: #119da4;
+    font: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navigation a:hover {
+    background-color: blue;
+}
+.navigation li:first-child {
+    display: block;
+    text-align: center;
+}
+.navigation li {
+    display: none;
+}
+.responsive li {
+    display: block;
+}
+.placeholder {
+    font-size: larger;
+    border: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.navigation ul {
+    padding: 0;
+}
+main {
+    background-color: #9684A1;
+}
+
+body {
+    background-color: #36494e;
+}

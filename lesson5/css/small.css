@@ -142,6 +142,7 @@ body {
     float: right;
     margin: 10px;
     display: grid;
+    overflow: none;
 }
 
 .article {

@@ -95,14 +95,28 @@ header img {
 .summary {
     
     background-color: #119da4;
-    opacity: 0.8;
+    opacity: 0.7;
     display: grid;
     padding: .5em;
     font-family: 'Montserrat', sans-serif;
 }
+.forecast {
+    background-color: #119da4;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
 
+th,td {
+    padding: .5em;
+}
 h2 {
-    background-color: #cfd11a;
+    background-color: blue;
     border-radius: 10px;
     padding: .5em;
 }
@@ -124,7 +138,25 @@ footer {
 body {
     background-color: #36494e;
 }
+.fishpic{
+    float: right;
+    margin: 10px;
+}
 
+.article {
+    background-color: #119da4;
+    padding: 1em;
+    text-align: left;
+    margin: 20px;
+    
+}
+.contactinfo {
+    background-color: #119da4;
+    text-align: center;
+    display: grid;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
 .mappic {
     width:100%;
 }

@@ -47,7 +47,6 @@ header img {
     display: block;
     text-align: center;
     background-color: #119da4;
-    font: black;
     font-family: 'Montserrat', sans-serif;
     border-radius: 10px;
 }
@@ -121,7 +120,6 @@ h2 {
     padding: .5em;
 }
 main {
-    background-color:none;
     width: 75%;
     padding: .5rem;
     margin: 20px;
@@ -142,7 +140,6 @@ body {
     float: right;
     margin: 10px;
     display: grid;
-    overflow: none;
 }
 
 .article {

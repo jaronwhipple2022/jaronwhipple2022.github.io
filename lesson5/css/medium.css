@@ -17,4 +17,7 @@
         display: flex;
         flex: 1 1 auto;
     }
+    .summary {
+        position: absolute;
+    }
 }

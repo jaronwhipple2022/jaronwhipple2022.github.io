@@ -17,6 +17,7 @@ header, footer {
     background-color: #ad2e24;
     color: #cfd11a;
     text-align: center;
+    border-radius: 10px;
 }
 
 header img {
@@ -24,6 +25,9 @@ header img {
     height: auto;
 }
 
+.summary {
+    display:block;
+}
 .headings {
     display: flex;
     flex-direction: column;
@@ -45,6 +49,7 @@ header img {
     background-color: #119da4;
     font: black;
     font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
 }
 
 .navigation a {
@@ -57,6 +62,9 @@ header img {
 .navigation a:hover {
     background-color: blue;
 }
+.navigation a:active {
+    background-color: blue;
+  }
 .navigation li:first-child {
     display: block;
     text-align: center;
@@ -64,9 +72,18 @@ header img {
 .navigation li {
     display: none;
 }
+.navigation ul {
+    padding: 0;
+}
 .responsive li {
     display: block;
 }
+
+.mainpic {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .placeholder {
     font-size: larger;
     border: black;
@@ -75,14 +92,39 @@ header img {
     padding: 25px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.summary {
+    
+    background-color: #119da4;
+    opacity: 0.8;
+    display: grid;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
 
-.navigation ul {
-    padding: 0;
+h2 {
+    background-color: #cfd11a;
+    border-radius: 10px;
+    padding: .5em;
 }
 main {
-    background-color: #9684A1;
+    background-color:none;
+    width: 75%;
+    padding: .5rem;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+footer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
     background-color: #36494e;
+}
+
+.mappic {
+    width:100%;
 }

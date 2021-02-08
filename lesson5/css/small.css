@@ -141,6 +141,7 @@ body {
 .fishpic{
     float: right;
     margin: 10px;
+    display: grid;
 }
 
 .article {

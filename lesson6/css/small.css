@@ -98,6 +98,7 @@ header img {
     display: grid;
     padding: .5em;
     font-family: 'Montserrat', sans-serif;
+    
 }
 .forecast {
     background-color: #119da4;
@@ -147,6 +148,9 @@ body {
     padding: 1em;
     text-align: left;
     margin: 20px;
+    content:"";
+    display: table;
+    clear: both;
     
 }
 .contactinfo {

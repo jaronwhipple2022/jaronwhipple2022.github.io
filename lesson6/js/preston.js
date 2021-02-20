@@ -31,7 +31,6 @@ let year = d.getFullYear();
 let currentDate = dayName + " " + realMonth + " " + d.getDate() + ", " + year;
 
 document.getElementById("date").textContent = currentDate;
-document.log(currentDate);
 
 // responsive menu
 function toggleMenu() {

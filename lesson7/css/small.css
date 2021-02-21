@@ -1,0 +1,165 @@
+.banner {
+    display: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #cfd11a;
+    padding: 1em;
+    font-size: 1em;
+}
+header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+    background-color: #ad2e24;
+    color: #cfd11a;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.summary {
+    display:block;
+}
+.headings {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.motto {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navigation {
+    list-style: none;
+    display: block;
+    text-align: center;
+    background-color: #119da4;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+}
+
+.navigation a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navigation a:hover {
+    background-color: blue;
+}
+.navigation a:active {
+    background-color: blue;
+  }
+.navigation li:first-child {
+    display: block;
+    text-align: center;
+}
+.navigation li {
+    display: none;
+}
+.navigation ul {
+    padding: 0;
+}
+.responsive li {
+    display: block;
+}
+
+.mainpic {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.placeholder {
+    font-size: larger;
+    border: black;
+    border-style: solid;
+    margin: 10px;
+    padding: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.summary {
+    
+    background-color: #119da4;
+    opacity: 0.7;
+    display: grid;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.forecast {
+    background-color: #119da4;
+    justify-content: center;
+}
+h3 {
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+th,td {
+    padding: .5em;
+}
+h2 {
+    background-color: blue;
+    border-radius: 10px;
+    padding: .5em;
+}
+main {
+    width: 75%;
+    padding: .5rem;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+footer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #36494e;
+}
+.fishpic{
+    float: right;
+    margin: 10px;
+    display: grid;
+}
+
+.article {
+    background-color: #119da4;
+    padding: 1em;
+    text-align: left;
+    margin: 20px;
+    content:"";
+    display: table;
+    clear: both;
+    
+}
+.contactinfo {
+    background-color: #119da4;
+    text-align: center;
+    display: grid;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+}
+.mappic {
+    width:100%;
+}

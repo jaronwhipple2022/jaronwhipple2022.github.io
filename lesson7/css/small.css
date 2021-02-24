@@ -119,13 +119,16 @@ h2 {
     background-color: blue;
     border-radius: 10px;
     padding: .5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
 }
 main {
     width: 75%;
     padding: .5rem;
-    margin: 20px;
+    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    display:block;
     
 }
 footer {
@@ -162,4 +165,23 @@ body {
 }
 .mappic {
     width:100%;
+}
+
+section.galleryimages {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 100%;
+    box-shadow: #119da4;
+    
+}
+
+.caption {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #119da4;
+    text-align: center;
+}
+
+figure img[data-src] {
+    filter: blur(1px);
 }

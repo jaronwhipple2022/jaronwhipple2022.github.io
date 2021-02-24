@@ -20,4 +20,7 @@
     .summary {
         position: absolute;
     }
+    section.galleryimages {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -1,0 +1,27 @@
+@media only screen and (min-width:32.5rem){
+   
+    header img {
+        
+        width: 128px;
+    }
+
+    .navigation li {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation ul {
+        display: flex;
+        flex: 1 1 auto;
+    }
+    .summary {
+        position: absolute;
+    }
+    section.galleryimages {
+        grid-template-columns: 1fr 1fr;
+    }
+}

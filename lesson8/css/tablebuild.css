@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+table{
+    box-shadow: 10px 10px 10px #628ca6;
+    text-align: center;
+}
+
+table {
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+th {
+    font-weight: 20px;
+    font-size: 2em;
+}
+th, td {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+tbody {
+    font-family: sans-serif;
+    background-color: #e7f0ed;
+    font-size: 1.25em;
+    
+}
+
+th, #foot {
+    background-color: #7fb9c2;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+  }
+.headings {
+    background-color: #628ca6;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}

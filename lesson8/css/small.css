@@ -186,3 +186,54 @@ section.galleryimages {
 figure img[data-src] {
     filter: blur(1px);
 }
+
+/* ----------------- FORM ------------------- */
+.formsection {    
+    justify-items: center;
+}
+.subscribebtn {
+    text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+fieldset {
+    border: 2px solid #ad2e24;
+    border-radius: 5px;
+    margin: .5em;
+    color: white;
+}
+form legend {
+    color: blue;
+    font-style: bold;
+}
+
+.severitybar {
+    display: inline;
+    padding: .5em;
+}
+#display {
+    color: red;
+    font-size: 1.5em;
+}
+form label.stack input, form label.stack select {
+    display: block;
+    padding: .5em;
+    margin: 10px;
+}
+.submit {
+    margin: .5em;
+    color: blue;
+    font-size: 1.5em;
+    background-color: #119da4;
+}
+.submitmessage {
+    background-color: blue;
+    border-radius: 10px;
+    padding: .5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+
+    margin: 3em;
+}

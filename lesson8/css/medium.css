@@ -24,4 +24,7 @@
     section.galleryimages {
         grid-template-columns: 1fr 1fr;
     }
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
 }

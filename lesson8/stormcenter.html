@@ -37,63 +37,75 @@
 
     <main>
         <h2>Storm Center</h2>
-        <section>
-            <form action="" method="get" class="stormform">
-                <fieldset>
+            <section class="formsection">
+            <form action="thanks.html" method="get" class="stormform">
+                <fieldset class="field">
                     <legend>Weather Application</legend>
                 
-                <div class="">
-                    <label>First Name: 
+                    <label class="stack">First Name: 
                     <input type="text" name="fname" required></label>
-                </div>
-                <div class="">
-                    <label>Last Name:
+                
+                    <label class="stack">Last Name:
                     <input type="text" name="lname" required></label>
-                </div>
-                <div class="">
-                    <label>Email: 
+
+                    <label class="stack">Email: 
                     <input type="email" name="email" placeholder="youremail@domain.com"></label>
-                </div>
-                <div class="">
-                    <label for="phone">Phone: 
+
+                    <label class="stack">Phone: 
                     <input type="tel" name="phone" required></label>
-                </div>
-                <div class="">
-                    <label>Zipcode: 
+
+                    <label class="stack">Zipcode: 
                     <input type="number" name="zip" required></label>
-                </div>
-                <div class="">
-                    <label>Storm date: 
+
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+
+                    <label class="stack">Storm date: 
                     <input type="date" name="date"></label>
-                </div>
-                <div class="">
-                    <label>Storm type: 
-                    <input type="number" name="type"></label>
-                </div>
-                <div class="">
-                    <label>Storm severity: 
-                    <input type="number" name="severity"></label>
-                </div>
-                <div class="">
-                    <label>Storm region: 
-                    <input type="number" name="region"></label>
-                </div>
-                <div class="">Are you in danger?</div>
-                    <label><input type="radio" name="danger" value="yes">YES</label>
-                    <label><input type="radio" name="danger" value="no">NO</label>
-                    <label><input type="radio" name="danger" value="maybe">MAYBE</label>
-                <div class="">
-                    <label>Other 
-                    <input type="textarea" name="other" id="other"></label>
-                </div>
-            
-                <div class="">
-                    <input type="submit" value="Subscribe">
-                </div>
+
+                    <label class="stack">Storm type: 
+                    <input list="stormtype" name="type"></label>
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                      </datalist>
+                    
+                    <div>
+                    <label class="severitybar">Storm severity: 
+                    <input type="range" min="1" max="10" value="5" class ="slider" id="stormRange">
+                    <span id="display"></span></label>   
+                    </div>
+
+                    <label class="stack">Storm region: 
+                    <select name="region">
+                    <option value="">Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option></select></label>
+
+                    <div class="stack">Are you in danger?
+                        <label><input type="radio" name="danger" value="yes">YES</label>
+                        <label><input type="radio" name="noDanger" value="no">NO</label>
+                        <label><input type="radio" name="unsure" value="maybe">MAYBE</label>
+                    </div>
+
+                    <label class="stack">Other 
+                    <input type="text" name="other" id="other"></label>
 
             </fieldset>
+            <div class="subscribebtn">
+                <input class="submit" type="submit" value="subscribe">
+            </div>
             </form>
-        </section>
+            </section>
+
+
+        
+
     </main>
 
 
@@ -101,6 +113,7 @@
         &copy;2021 | Jaron Whipple | BYUI WDD230 | Goshen, ID <br> Last update: <span id="date"></span>
     </footer>
 
+    <script src="js/storm.js"> </script>
     <script src="js/preston.js"> </script>
     <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

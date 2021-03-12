@@ -49,3 +49,13 @@ if (dayName == "Saturday") {
 else { 
     document.querySelector("banner").style.visibility = "hidden";
     } */
+
+/* -------------------------cards javascript-------------------------------- 
+6d7c2a6f0ff9a75f0842da0dc97f6aa0
+&units=imperial 
+*/
+
+const townURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+    const towns = jsonObject[""];
+

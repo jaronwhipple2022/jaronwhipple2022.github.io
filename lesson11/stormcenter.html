@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+
+</head>
+
+<body>
+    <div class="banner">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture>
+            <img src="images/icon.png" alt="Logo"/>
+        </picture>
+        <section class="headings">
+            <h1>active208.com</h1>
+            <div class="motto">Local fun and udates!</div>
+        </section>
+    </header> 
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <h2>Storm Center</h2>
+            <section class="formsection">
+            <form action="thanks.html" method="get" class="stormform">
+                <fieldset class="field">
+                    <legend>Weather Application</legend>
+                
+                    <label class="stack">First Name: 
+                    <input type="text" name="fname" required></label>
+                
+                    <label class="stack">Last Name:
+                    <input type="text" name="lname" required></label>
+
+                    <label class="stack">Email: 
+                    <input type="email" name="email" placeholder="youremail@domain.com"></label>
+
+                    <label class="stack">Phone: 
+                    <input type="tel" name="phone" required></label>
+
+                    <label class="stack">Zipcode: 
+                    <input type="number" name="zip" required></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+
+                    <label class="stack">Storm date: 
+                    <input type="date" name="date"></label>
+
+                    <label class="stack">Storm type: 
+                    <input list="stormtype" name="type"></label>
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                      </datalist>
+                    
+                    <div>
+                    <label class="severitybar">Storm severity: 
+                    <input type="range" min="1" max="10" value="5" class ="slider" id="stormRange">
+                    <span id="display"></span></label>   
+                    </div>
+
+                    <label class="stack">Storm region: 
+                    <select name="region">
+                    <option value="">Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option></select></label>
+
+                    <div class="stack">Are you in danger?
+                        <label><input type="radio" name="danger" value="yes">YES</label>
+                        <label><input type="radio" name="noDanger" value="no">NO</label>
+                        <label><input type="radio" name="unsure" value="maybe">MAYBE</label>
+                    </div>
+
+                    <label class="stack">Other 
+                    <input type="text" name="other" id="other"></label>
+
+            </fieldset>
+            <div class="subscribebtn">
+                <input class="submit" type="submit" value="subscribe">
+            </div>
+            </form>
+            </section>
+
+
+        
+
+    </main>
+
+
+    <footer>
+        &copy;2021 | Jaron Whipple | BYUI WDD230 | Goshen, ID <br> Last update: <span id="date"></span>
+    </footer>
+
+    <script src="js/storm.js"> </script>
+    <script src="js/preston.js"> </script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='js/fontloader.js'></script>
+
+</body>
+</html>

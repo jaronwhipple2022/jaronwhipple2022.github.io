@@ -1,6 +1,6 @@
 
 // current date section
-let daynames = [
+const daynames = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -88,12 +88,40 @@ fetch(townURL)
 
 
 
-/* -------------------------weather api javascript-------------------------------- 
-6d7c2a6f0ff9a75f0842da0dc97f6aa0
-&units=imperial 
-*/
+/* -------------------------weather api javascript-------------------------------- */
 
 //const townURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
- //   const towns = jsonObject[""];
+ // b850fbcd027801228eb544e5bbb816db
 
+ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=6d7c2a6f0ff9a75f0842da0dc97f6aa0&units=imperial"
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+    // const desc = jsObject.weather[0].description;  // note how we reference the weather array
+    document.querySelector('#current_1').textContent = jsObject.main.temp;
+    document.querySelector('#current_2').textContent = jsObject.main.temp_max;
+    document.querySelector('#current_4').textContent = jsObject.main.humidity;
+    document.querySelector('#current_5').textContent = jsObject.wind.speed;
+  });
+
+const apiForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=b850fbcd027801228eb544e5bbb816db&units=imperial"
+
+fetch(apiForecast)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    let forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+
+    for (let step = 0; step < 5; step++) {
+      // Loop through each of the next 5 forecast days
+      let day = new Date(forecast[step].dt_txt); // Creates a new date with the information from the JSON
+      let image = 'https://openweathermap.org/img/w/' + forecast[step].weather[0].icon + '.png';
+      document.querySelector(`#dayname${step+1}`).textContent = dayname[day.getDay()];
+      document.querySelector(`#image${step+1}`).setAttribute('src', image)
+      document.querySelector(`#image${step+1}`).setAttribute('alt', forecast[step].weather[0].description)
+      document.querySelector(`#temp${step+1}`).textContent = (Math.round(forecast[step].main.temp));
+    };
+  });

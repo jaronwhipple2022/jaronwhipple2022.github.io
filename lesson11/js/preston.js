@@ -1,6 +1,6 @@
 
 // current date section
-let daynames = [
+const daynames = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -49,7 +49,7 @@ if (dayName == "Saturday") {
 else { 
     document.querySelector("banner").style.visibility = "hidden";
     } */
-/* -------------------------cards javascript-------------------------------*/
+/* -------------------------cards-------------------------------*/
 
 // I used the help of Meagan Roberts to complete this section of code
 
@@ -81,19 +81,49 @@ fetch(townURL)
 
             card.append(div, image)
             div.append(title, motto, p)
-            cards.append(card)}
-        })
+            cards.append(card)
+        }
 
     })
 
 
-
-/* -------------------------weather api javascript-------------------------------- 
-6d7c2a6f0ff9a75f0842da0dc97f6aa0
-&units=imperial 
-*/
+/* -------------------------weather api-------------------------------- */
 
 //const townURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
- //   const towns = jsonObject[""];
+ // b850fbcd027801228eb544e5bbb816db
 
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=117640c4230f9ea63f7311907fa46303&units=imperial"
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+
+    document.querySelector('#condition').textContent = jsObject.main.weather;
+    document.querySelector('#currentTemp').textContent = jsObject.main.temp;
+    document.querySelector('#currentHigh').textContent = jsObject.main.temp_max;
+    document.querySelector('#currentHumidity').textContent = jsObject.main.humidity;
+    let currentHumidity = document.getElementById('currentHumidity')
+    currentHumidity.innerHTML = `${weatherObject.main.humidity}%`;
+    document.querySelector('#currentSpeed').textContent = jsObject.wind.speed;
+  });
+
+
+const apiForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=117640c4230f9ea63f7311907fa46303&units=imperial"
+
+fetch(apiForecast)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    let forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+
+    for (let step = 0; step < 5; step++) {
+
+      // Loop through each of the next 5 forecast days
+      let day = new Date(forecast[step].dt_txt);
+      let image = 'https://openweathermap.org/img/w/' + forecast[step].weather[0].icon + '.png';
+      document.querySelector(`#dayname${step+1}`).textContent = dayname[day.getDay()];
+      document.querySelector(`#image${step+1}`).setAttribute('src', image)
+      document.querySelector(`#image${step+1}`).setAttribute('alt', forecast[step].weather[0].description)
+      document.querySelector(`#temp${step+1}`).textContent = (Math.round(forecast[step].main.temp));
+    };
+  })

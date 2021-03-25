@@ -81,7 +81,7 @@ fetch(townURL)
 
             card.append(div, image)
             div.append(title, motto, p)
-            cards.append(card)}
+            //cards.append(card)}
         })
 
     })
@@ -100,11 +100,12 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    // const desc = jsObject.weather[0].description;  // note how we reference the weather array
+    document.querySelector('#condition').textContent = jsObject.main.weather;
     document.querySelector('#currentTemp').textContent = jsObject.main.temp;
     document.querySelector('#currentHigh').textContent = jsObject.main.temp_max;
     document.querySelector('#currentHumidity').textContent = jsObject.main.humidity;
+    let currentHumidity = document.getElementById('currentHumidity')
+    currentHumidity.innerHTML = `${weatherObject.main.humidity}%`;
     document.querySelector('#currentSpeed').textContent = jsObject.wind.speed;
   });
 

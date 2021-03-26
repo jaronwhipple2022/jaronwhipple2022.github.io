@@ -94,16 +94,13 @@ header img {
 .summary {
     
     background-color: #119da4;
-    opacity: 0.7;
+    opacity: 0.8;
     display: grid;
     padding: .5em;
     font-family: 'Montserrat', sans-serif;
     
 }
-.forecast {
-    background-color: #119da4;
-    justify-content: center;
-}
+
 h3 {
     text-align: center;
     color: blue;
@@ -278,4 +275,16 @@ form label.stack input, form label.stack select {
     font-size: 2em;
     margin: 10px;
     padding: 1em;
+}
+
+/*----------weather summary-------------*/
+.forecast {
+    color:blue;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: x-large;
+}
+.day_div {
+    margin: 0 auto; 
+    text-align: center;
 }

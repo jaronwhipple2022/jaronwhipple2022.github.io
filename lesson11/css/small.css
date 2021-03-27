@@ -29,9 +29,8 @@ header img {
 }
 
 .summary {
-    display:block;
-    width: 20%;
-    height: 50%;
+    display: inline-block;
+    font-size: small;
 }
 .headings {
     display: flex;

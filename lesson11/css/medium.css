@@ -1,7 +1,6 @@
 @media only screen and (min-width:32.5rem){
    
     header img {
-        
         width: 128px;
     }
 
@@ -35,6 +34,8 @@
     .cards section:nth-child(even) div {
         grid-column: reverse;
     }
+
+    /*----other---*/
     .forecast {
         font-size: large;
     }

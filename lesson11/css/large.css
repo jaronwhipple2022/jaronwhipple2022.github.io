@@ -7,6 +7,9 @@
     .singleimage:hover {
         box-shadow: 0 0 30px blue;
     }
+    .summary {
+        font-size: medium;
+    }
 
     /*------home------*/
     .cards {

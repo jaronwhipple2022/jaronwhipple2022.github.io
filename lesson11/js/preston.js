@@ -86,8 +86,6 @@ fetch(townURL)
     })
 })
 
-
-
 /*------------- event js---------------
 const townURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(townURL)

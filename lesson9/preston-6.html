@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <title>Preston, Idaho</title>
+    <title>Preston</title>
 
 </head>
 
@@ -27,11 +27,11 @@
         <ul>
             <li><a href="#" onclick="toggleMenu()">Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav> 
 
@@ -40,53 +40,61 @@
         
         <section class="summary">
             <h1>Weather Summary</h1>
-            <p>Current Temperature: <span id="currentTemp">31</span></p>
-            <p>High: 42</p>
+            <p>Current Condition: <span id="condition"></span></p>
+            <p>Current Temperature: <span id="currentTemp"></span></p>
+            <p>High: <span id="currentHigh"></span></p>
             <p>Wind Chill: <span id="windChill"></span></p>
-            <p>Wind Speed: <span id="currentSpeed">12</span> mph</p>
-            <p>Humidity: 32%</p>
+            <p>Wind Speed: <span id="currentSpeed"></span> mph</p>
+            <p>Humidity: <span id="currentHumidity"></span></p>
         </section>
-
-        <! -- <img class="mainpic" src="images/origionl1.webp" alt="Twin Lakes Picture"/> -->
 
         <picture>
-            <source srcset="images/heromedium.webp" media="(min-width: 32rem) and (max-width: 63.9rem)">
-            <source srcset="images/herolarge.webp" media="(min-width: 60em)">
-            <img src="images/herosmall.webp" alt="hero image">
+            <source srcset="images/Twin-Lakes-medium.webp" media="(min-width: 32rem) and (max-width: 63.9rem)">
+            <source srcset="images/Twin-Lakes-large.webp" media="(min-width: 60em)">
+            <img src="images/Twin-Lakes-small.webp" alt="hero image">
+            <!-- photocred: McCall Chamber -->
             </picture>
             
-        <section class="forecast">
-            <h3>5 Day Forecast</h3>
-            <div class="day_div">
-                <h3 id="dayname1"></h3>
-                <img id="image1" src="" alt="">
-                <p> <span id="temp1"></span> </p>
-            </div>
+            <h2>5 Day Forecast</h2>
+            <section class="forecast">
+                
+                <div class="day_div">
+                    <h3 id="dayname1"></h3>
+                    <img id="image1" src="" alt="">
+                    <p><span id="temp1"></span> °F</p>
+                </div>
+    
+                <div class="day_div">
+                    <h3 id="dayname2"></h3>
+                    <img id="image2" src="" alt="">
+                    <p><span id="temp2"></span> °F</p>
+                </div>
+    
+                <div class="day_div">
+                    <h3 id="dayname3"></h3>
+                    <img id="image3" src="" alt="">
+                    <p><span id="temp3"></span> °F</p>
+                </div>
+    
+                <div class="day_div">
+                    <h3 id="dayname4"></h3>
+                    <img id="image4" src="" alt="">
+                    <p><span id="temp4"></span> °F</p>
+                </div>
+    
+                <div class="day_div">
+                    <h3 id="dayname5"></h3>
+                    <img id="image5" src="" alt="">
+                    <p><span id="temp5"></span> °F</p>
+                </div>
+            </section>
 
-            <div class="day_div">
-                <h3 class="dayname2"></h3>
-                <img class="image2" src="" alt="">
-                <p class="temp2"></p>
-            </div>
-
-            <div class="day_div">
-                <h3 class="dayname3"></h3>
-                <img class="image3" src="" alt="">
-                <p class="temp3"></p>
-            </div>
-
-            <div class="day_div">
-                <h3 class="dayname4"></h3>
-                <img class="image4" src="" alt="">
-                <p class="temp4"></p>
-            </div>
-
-            <div class="day_div">
-                <h3 class="dayname5"></h3>
-                <img class="image5" src="" alt="">
-                <p class="temp5"></p>
-            </div>
-        </section>
+        <div class=townEvents>
+            <h2>Upcoming Events!</h2>
+            <p> <span id= event1></span> </p>
+            <p id= event2></p>
+            <p id= event3></p>
+        </div>
 
         <div class="article">
             <h1>What's Biting?</h1>
@@ -94,15 +102,17 @@
                 <img src='images/fishing1.webp' alt='fishing picture'/>
                 <figcaption>Photo by: Vista Pawn</figcaption>
                 </figure>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend.
-                Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat.
-                </p>
+            <p> The fishing near Preston Idaho has been incredible!  As reported by local fisherman, there has been an incresingly
+                high amount of the commonly caught rainbow trout.  There are also larger amounts of brown trout reported.  These are
+                more sought after when compared to rainbow trout because they are often a lot bigger in size.  What fisherman doesn't
+                enjoy landing a large fish? Fly fishing is the most commonly used method, as there are lots of streams nearby.  Many 
+                Preston locals also enjoy traveling a few hours to access larger water sources such as the Snake River, or Bear lake.
+            </p>
 
         </div>
         <div class="map">
             <h2>Contact Us</h2>
-            <img class="mappic" src="images/prestonmap1.webp" alt="map"/>
+            <img class="mappic" src="images/prestonmap.png" alt="map"/>
             <section class="contactinfo">
                 <p>123 w 456 n Preston, ID</p>
                 <p>208-521-5555</p>

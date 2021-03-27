@@ -35,5 +35,11 @@
     .cards section:nth-child(even) div {
         grid-column: reverse;
     }
+    .forecast {
+        font-size: large;
+    }
+    h3 {
+        font-size: x-large;
+    }
 
 }

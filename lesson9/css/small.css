@@ -279,3 +279,14 @@ form label.stack input, form label.stack select {
     margin: 10px;
     padding: 1em;
 }
+/*----------weather summary-------------*/
+.forecast {
+    color:blue;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: x-large;
+}
+.day_div {
+    margin: 0 auto; 
+    text-align: center;
+}

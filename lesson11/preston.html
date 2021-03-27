@@ -40,7 +40,6 @@
         
         <section class="summary">
             <h1>Weather Summary</h1>
-            <p>Current Condition: <span id="condition"></span></p>
             <p>Current Temperature: <span id="currentTemp"></span></p>
             <p>High: <span id="currentHigh"></span></p>
             <p>Wind Chill: <span id="windChill"></span></p>
@@ -51,7 +50,7 @@
         <picture>
             <source srcset="images/Twin-Lakes-medium.webp" media="(min-width: 32rem) and (max-width: 63.9rem)">
             <source srcset="images/Twin-Lakes-large.webp" media="(min-width: 60em)">
-            <img src="images/Twin-Lakes-small.webp" alt="hero image">
+            <img class="heroimg" src="images/Twin-Lakes-small.webp" alt="hero image">
             <!-- photocred: McCall Chamber -->
             </picture>
             
@@ -127,6 +126,7 @@
     </footer>
 
     <script src="js/preston.js"> </script>
+    <script src="js/prestonAPI.js"> </script>
     <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src='js/fontloader.js'></script>

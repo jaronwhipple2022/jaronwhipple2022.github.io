@@ -36,11 +36,11 @@ document.getElementById("date").textContent = currentDate;
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
-
+/*
 // banner
 if (dayName == "Friday") {
     document.getElementById("banner").style.display = "block";
-}
+}*/
 
 /* let bannerMessage = "";
 if (dayName == "Saturday") {
@@ -71,7 +71,7 @@ fetch(townURL)
             let image = document.createElement("img");
         
             if(town.name == "Preston" || town.name == "Fish Haven" || 
-            town.name == "Soda Springs") {;
+            town.name == "Soda Springs") {
             title.innerHTML = `${town.name}`;
             motto.innerHTML = `${town.motto}`;
             p.innerHTML = `Founding: ${town.yearFounded} <br>
@@ -81,33 +81,30 @@ fetch(townURL)
 
             card.append(div, image)
             div.append(title, motto, p)
-            //cards.append(card)}
-        })
+            cards.append(card)
+        }
 
     })
-
+})
 
 
 /* -------------------------weather api-------------------------------- */
 
-//const townURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+ // 117640c4230f9ea63f7311907fa46303
 
- // b850fbcd027801228eb544e5bbb816db
-
- const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=117640c4230f9ea63f7311907fa46303&units=imperial"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=117640c4230f9ea63f7311907fa46303&units=imperial"
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
 
-    document.querySelector('#condition').textContent = jsObject.main.weather;
+    document.querySelector('#condition').textContent = jsObject.weather.description;
     document.querySelector('#currentTemp').textContent = jsObject.main.temp;
     document.querySelector('#currentHigh').textContent = jsObject.main.temp_max;
     document.querySelector('#currentHumidity').textContent = jsObject.main.humidity;
-    let currentHumidity = document.getElementById('currentHumidity')
-    currentHumidity.innerHTML = `${weatherObject.main.humidity}%`;
     document.querySelector('#currentSpeed').textContent = jsObject.wind.speed;
   });
+
 
 const apiForecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=117640c4230f9ea63f7311907fa46303&units=imperial"
 
@@ -116,13 +113,15 @@ fetch(apiForecast)
   .then((jsObject) => {
     let forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
+    // Loop through the next 5 forecast days
     for (let step = 0; step < 5; step++) {
-      // Loop through each of the next 5 forecast days
-      let day = new Date(forecast[step].dt_txt);
+      
+      let nextDay = new Date(forecast[step].dt_txt);
       let image = 'https://openweathermap.org/img/w/' + forecast[step].weather[0].icon + '.png';
-      document.querySelector(`#dayname${step+1}`).textContent = dayname[day.getDay()];
+      document.querySelector(`#dayname${step+1}`).textContent = daynames[nextDay.getDay()];
       document.querySelector(`#image${step+1}`).setAttribute('src', image)
       document.querySelector(`#image${step+1}`).setAttribute('alt', forecast[step].weather[0].description)
       document.querySelector(`#temp${step+1}`).textContent = (Math.round(forecast[step].main.temp));
     };
-  });
+  })
+

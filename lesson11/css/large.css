@@ -17,4 +17,7 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .forecast {
+        font-size: x-large;
+    }
 }

@@ -12,7 +12,10 @@ header {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
 }
-
+.heroimg {
+    width: 100%;
+    height: auto;
+  }
 header, footer {
     background-color: #ad2e24;
     color: #cfd11a;
@@ -27,6 +30,8 @@ header img {
 
 .summary {
     display:block;
+    width: 20%;
+    height: 50%;
 }
 .headings {
     display: flex;
@@ -282,9 +287,12 @@ form label.stack input, form label.stack select {
     color:blue;
     justify-content: space-evenly;
     display: flex;
-    font-size: x-large;
+    font-size: medium;
 }
 .day_div {
     margin: 0 auto; 
     text-align: center;
+}
+h3 {
+    font-size: large;
 }

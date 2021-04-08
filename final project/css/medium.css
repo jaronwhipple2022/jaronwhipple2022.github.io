@@ -1,0 +1,23 @@
+@media only screen and (min-width:32.5rem){
+
+    .navigation li {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation ul {
+        display: flex;
+        flex: 1 1 auto;
+    }
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+    .firthpics {
+        display:flex;
+        flex: 1 1;
+    }
+}

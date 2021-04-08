@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Join us!</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/firthlogo2.webp" alt="Logo"/>
+        </picture>
+        <section class="headings">
+            <h1>FirthCOC.org</h1>
+            <div class="motto">Small town friends, big business trends.</div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="firth.html">Firth</a></li>
+            <li><a href="join.html">Join Us!</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <h2>Join the Firth Chamber of Commerce!</h2>
+
+        <div class="lvldesc">
+            <h1>Membership Levels:</h1>
+            <p>Non-profit ($100) Join our social media pages!</p>
+            <p>Bronze ($200) -  One social media post, and a free business seminar!</p>
+            <p>Silver ($400 -  In addition to Bronze, Luncheon tickets every 3 months!</p>
+            <p>Gold ($1000) - In addition to silver and bronze, sponsorships, and a permanent directory listing on
+                our website!</p>
+        </div>
+            <section class="formsection">
+            <form action="thanks.html" method="get" class="stormform">
+                <fieldset class="field">
+                    <legend>Personal Info</legend>
+                
+                    <label class="stack">First Name: 
+                    <input type="text" name="fname" required></label>
+                
+                    <label class="stack">Last Name:
+                    <input type="text" name="lname" required></label>
+
+                    <label class="stack">Title:
+                    <input type="text" name="title"></label>
+
+                    <label class="stack">Email: 
+                    <input type="email" name="email" placeholder="youremail@domain.com"></label>
+
+                    <label class="stack">Phone: 
+                    <input type="tel" name="phone"></label>
+                </fieldset>
+
+                <fieldset class="field">
+                    <legend>Business Info</legend>
+
+                    <label class="stack">Business Name:
+                    <input type="text" name="bname" required></label>
+
+                    <label class="stack">Business address:
+                    <input type="text" name="address"></label>
+
+                    <label class="stack">Business Website:
+                    <input type="text" name="website"></label>
+
+                    <label class="stack">Business Description:
+                    <input type="text" name="description"></label>
+
+                    <label class="stack">Membership Level: 
+                    <input list="membership" name="type"></label>
+                    <datalist id="membership">
+                        <option value="Non-profit ($100)">
+                        <option value="Bronze ($200)">
+                        <option value="Silver ($400)">
+                        <option value="Gold ($1000)">
+                        </datalist>
+                </fieldset>
+
+            <div class="subscribebtn">
+                <input class="submit" type="submit" value="subscribe">
+            </div>
+            </form>
+            </section>
+    </main>
+    <footer>
+        &copy;2021 | Jaron Whipple | BYUI WDD230 | Goshen, ID <br> Last update: <span id="date"></span>
+    </footer>
+    
+    <script src="js/main.js"> </script>
+</body>
+</html>

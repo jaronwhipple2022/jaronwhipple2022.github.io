@@ -129,8 +129,7 @@ main {
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    display:block;
-    
+    display:block;  
 }
 footer {
     width: 75%;
@@ -141,6 +140,7 @@ footer {
 body {
     background-color: #36494e;
 }
+
 .fishpic{
     float: right;
     margin: 10px;
@@ -174,7 +174,6 @@ section.galleryimages {
     justify-content: center;
     max-width: 100%;
     box-shadow: #119da4;
-    
 }
 
 .caption {

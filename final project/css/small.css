@@ -1,0 +1,180 @@
+header, footer {
+    background-color: #931f1d;
+    color: #ffed66;
+    text-align: center;
+    border-radius: 10px;
+}
+header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.headings {
+    margin-left: 20px;
+}
+.mainpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h2 {
+    background-color: #2de1c2;
+    border-radius: 10px;
+    padding: .5em;
+    text-align: center;
+}
+.navigation a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-size: larger;
+    background-color: #28666e;
+}
+.navigation a:visited {
+    color: #ffed;
+  }
+.navigation a:hover {
+    background-color: #2de1c2;
+}
+.navigation a:active {
+    background-color: #2de1c2;
+  }
+.navigation li:first-child {
+    display: block;
+    text-align: center;
+}
+.navigation li {
+    display: none;
+}
+.navigation ul {
+    padding: 0;
+}
+.responsive li {
+    display: block;
+}
+
+main {
+    width: 75%;
+    padding: .5rem;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;  
+}
+.icon {
+    max-width: 25%;
+}
+footer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #36494e;
+}
+
+/* ----------------- FORM ------------------- */
+.formsection {    
+    justify-items: center;
+}
+.subscribebtn {
+    text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+fieldset {
+    border: 2px solid #2de1c2;
+    border-radius: 5px;
+    margin: .5em;
+    color: white;
+}
+form legend {
+    color: blue;
+    font-style: bold;
+}
+
+form label.stack input, form label.stack select {
+    display: block;
+    padding: .5em;
+    margin: 10px;
+}
+/* ----------------- FORECAST ------------------- */
+.forecastBox {
+    border-radius: 5px;
+    background-color: #931f1d;
+}
+.forecast {
+    color: #2de1c2;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: medium;
+}
+.day_div {
+    margin: 0 auto; 
+    text-align: center;
+}
+
+/* ----------------- CONTACT/join PAGE ------------------- */
+.contact, .lvldesc, .purpose, .social {
+    background-color: #28666e;
+    text-align: center;
+    font-size: larger;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.contactform {
+    justify-items: center;
+}
+.contactinfo {
+    background-color: #28666e;
+    display: flex;
+    width: 75%;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.boardOfDirectors {
+    background-color: #2de1c2;
+    text-align: center;
+    padding: .5rem;
+}
+.mappic {
+    width:100%;
+}
+
+/* ----------------- FIRTH PAGE ------------------- */
+
+.welcomeimage{
+    float: left;
+    margin: 10px;
+    display: grid;
+}
+.welcome {
+    background-color: #28666e;
+    padding: 1em;
+    text-align: left;
+    margin: 20px;
+    content:"";
+    display: table;
+    clear: both;
+}
+.firthpics {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}

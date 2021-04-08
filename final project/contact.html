@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/firthlogo2.webp" alt="Logo"/>
+        </picture>
+        <section class="headings">
+            <h1>FirthCOC.org</h1>
+            <div class="motto">Small town friends, big business trends.</div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="firth.html">Firth</a></li>
+            <li><a href="join.html">Join Us!</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav> 
+    <main>
+        <h2>Feel free to contact us at any time!</h2>
+        <div class="contact">
+            <h1>Contact information:</h1>
+            <p>Phone: 208-521-3273</p>
+            <p>Email: firthcoc@gmail.com</p>
+            <p>Address: 323 N Main St, Firth, ID 83236</p>
+            <p>Click map below for Google Maps!</p>
+        </div>
+
+        <a href="https://tinyurl.com/yfcw7prv" target="_blank">
+            <img class="mappic" src="images/mappic.webp" alt="Map link">
+          </a>
+
+        <h2>Ask us a question!</h2>
+        </main>
+        <div class="contactinfo">
+            <section class="boardOfDirectors">
+                <h1>Board of Directors</h1>
+                <p>Call a board member any time.</p>
+                <p>Jaron Whipple 208-521-3373</p>
+                <p>Shandria Whipple 208-601-4546</p>
+                <p>Phil Wherral 208-313-9272</p>
+            </section>
+            <section class="contactform">
+                <form action="" method="get" class="contactform">
+                    <fieldset class="field">
+                        <legend>Enter information</legend>
+                    
+                        <label class="stack">First Name: 
+                        <input type="text" name="fname" required></label>
+                    
+                        <label class="stack">Last Name:
+                        <input type="text" name="lname" required></label>
+
+                        <label class="stack">Email: 
+                        <input type="email" name="email" placeholder="youremail@domain.com"></label>
+
+                        <label class="stack">Phone: 
+                        <input type="tel" name="phone"></label>
+
+                        <label class="stack">Comment:
+                        <input type="text" name="lname" required></label>
+                        <div class="subscribebtn">
+                            <input class="submit" type="submit" value="subscribe">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy;2021 | Jaron Whipple | BYUI WDD230 | Goshen, ID <br> Last update: <span id="date"></span>
+    </footer>
+    
+    <script src="js/main.js"> </script>
+</body>
+</html>
